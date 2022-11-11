@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <style>
+            * {
+                background-color: pink;
+            }
+            label {
+                display: block;
+                margin: auto;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            section {
+                margin:auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            h1 {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            input {
+                display: block;
+            }
+            textarea {
+                display: block;
+            }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1>Appointment form</h1>
+    </section>
+    <section>
+    <p>Please book your appointment here</p>
+    </section>
+    <section>
+        <form>
+            <label for="name">Name
+<input type="text" id="name" placeholder="write your name" required />
+            </label>
+            <label for="phone">phone number
+                <input type="number" id="phone" placeholder="write your phone number" required />
+            </label>
+            <label for="day">Pick your day
+<input type="date" id="day" placeholder="choose your day" required />
+            </label>
+            <label for="message">Reason for appointment
+                <textarea id="message" rows="5" cols="9" placeholder="i would like to learn ways of..." required></textarea>
+            </label>
+            <input type="submit" value="submit" />
+        </form>
+    </section>
+</body>
+</html>
