@@ -7,41 +7,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        * {
+            
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         h1 {
             font-weight: bold;
             color: black;
             text-align: center;
         }
-        * {
-            background-color: pink;
-        }
+        
         h2 {
             text-align: center;
             color: black;
         }
-        a {
-            display: block;
-        }
         .checked{
             color: darkred;
+        }
+        .navbar{
+            background-color: pink;
+            padding: 18px;
+            margin: auto 0;
+            min-width: 50%;
+            width: 100vw;
+        }
+        .head{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .head a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        img{
+            height: 250px;
+            width: 250px;   
+        }
+        .picture {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height:auto;
+        }
+        .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: deeppink;
         }
     </style>
     <title>Adah's Health And Beauty</title>
 </head>
 <body>
+    <nav class="navbar">
     <h1>Adah's Health And Beauty</h1>
     <h2>Your skincare expert</h2>
-    <a href="about.html">About Us</a>
+    <div class="head">
+    <a href="#">Home</a>
+    <a href="contact.html">Contact</a>
     <a href="booking.html">Book Appointment</a>
-    <a href="contact.html">Contact Us</a>
-    <img src="/profile.jpg" alt="a picture of a woman">
+    <a href="about.html">About Us</a>
+    </div>
+</nav>
+<section class="picture">
+<div class="image">
+    <img src="/skin.jpg" alt="a picture of a woman">
+</div>
+<div class="image">
+    <img src="/camille-brodard-VxAwTeiqDao-unsplash.jpg" alt="a picture of a woman">
+</div>
+<div class="image">
+    <img src="/content-pixie-WdJ4WnLxyDs-unsplash.jpg" alt="a picture of a woman">
+</div>
+<div class="image">
+    <img src="/hand-oil.jpg" alt="a picture of a woman">
+</div>
+    <img src="/s-o-c-i-a-l-c-u-t-Z0_90jVuH4Q-unsplash.jpg" alt="a picture of a woman">
+</div>
+</div>
+<img src="/toa-heftiba-GLl6_-L3fxM-unsplash.jpg" alt="a picture of a woman">
+</div>
+</section>
+<div class="container">
+    <img src="/camille-brodard-VxAwTeiqDao-unsplash.jpg" alt="a woman's face" style="width: 100%";>
+    <div class="centered">Love your skin</div>
+</div>
     <p>Have any questions regarding skincare? Well, worry not. We are here to answer your questions.</p>
     <h3>Star Rating</h3>
     <p>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
+    <span class="fa fa-star checked"></span>
     <span class="fa fa-star"></span>
     </p>
     <footer>
