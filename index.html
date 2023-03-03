@@ -74,13 +74,66 @@
         * {
             background-color: pink;
         }
+        .cuk {
+            width: 1600px;
+            margin: auto;
+        }
+        .subcuk {
+            width: 80%;
+            margin: auto;
+        }
+        @media(max-width:1600px) {
+            .cuk {
+                width: 100%;
+            }
+        }
+        @media(max-width:1024px) {
+            .cookies {
+                padding: 10px, 0;
+            }
+        }
+        #cookies {
+            width: 100%;
+            position:fixed;
+            top: 45%;
+            color:black;
+            background-color: black;
+            z-index: 1;
+        }
+        .cookies {
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #btn {
+border-radius: 5px;
+padding: 10px;
+font-size: 1 rem;
+cursor: pointer;
+border: 2px solid white;
+color: white;
+background-color: black;
+        }
     </style>
     <title>Adah's Health And Beauty</title>
 </head>
 <body>
+    <div id="cookies">
+        <div class="cuk">
+            <div class="subcuk">
+                <div class="cookies">
+                    <p>This website uses cookies to ensure you get best experience</p>
+                    <button id="btn">Accept cookies</button>
+</div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar">
-    <h1>Adah's Health And Beauty</h1>
-    <h2>Your skincare expert</h2>
+    <h1 id="head" onmouseover="mouseOver()">Adah's Health And Beauty</h1>
+    <h2 id="sub" onmouseover="mouseOver">Your skincare expert</h2>
     <div class="head">
     <a href="#">Home</a>
     <a href="about.html">About Us</a>
@@ -124,5 +177,18 @@
         <p>"Your skin is the only place you have to live forever, so take good care of it." Anonymous.</p>
         
     </footer>
+    <script>
+        setCookie = (cName, cValue) => {
+            document.cookie = cName + "=" + cValue + "; " + "; path =/";
+        }
+document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#cookies").style.display = "none";
+    setCookie("cookie", true) 
+})
+function mouseOver() {
+    document.getElementById("head").style.color = "red";
+    document.getElementById("sub").style.color = "red";
+}
+    </script>
 </body>
 </html>
